@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EduAltTech Zones</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #a1c4fd, #c2e9fb);
+    }
+
+    .heading {
+      text-align: center;
+      font-size: 3rem;
+      margin: 30px 20px;
+      color: #3b3b3b;
+      font-weight: 700;
+    }
+
+    .heading span {
+      color: #ff5c8a;
+    }
+
+    .scroll-container {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .zones-row {
+      display: flex;
+      gap: 40px;
+      padding: 40px;
+      animation: scroll-left 30s linear infinite;
+      width: max-content;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .zone {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      width: 280px;
+      flex-shrink: 0;
+    }
+
+    .zone img {
+      width: 280px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 16px;
+      pointer-events: none;
+      transform: scale(1.1);
+    }
+
+    .zone-label {
+      font-weight: bold;
+      font-size: 1.3rem;
+      margin-top: 14px;
+      color: #333;
+    }
+
+    .join-button {
+      margin: 40px auto;
+      display: block;
+      padding: 15px 40px;
+      font-size: 20px;
+      background-color: #ff5c8a;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease;
+    }
+
+    .join-button:hover {
+      background-color: #e13c6e;
+    }
+
+    @media (max-width: 600px) {
+      .zone {
+        width: 220px;
+      }
+
+      .zone img {
+        width: 220px;
+        height: 220px;
+      }
+
+      .heading {
+        font-size: 2rem;
+      }
+    }
+  </style>
+
+  <script>
+    // Redirect to Google Form after the page loads
+    window.onload = function() {
+      setTimeout(function() {
+        window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfJyn1mlqKSKCcXhcdiOXxzFU0wOfUsMtzgre8-wC331Gzyvg/viewform?usp=sf_link';
+      }, 5000); // Redirect after 5 seconds
+    };
+  </script>
+</head>
+<body>
+
+  <div class="heading">🌍 Welcome to the World of <span>EduAltTech</span></div>
+
+  <div class="scroll-container">
+    <div class="zones-row">
+      <!-- Repeat content twice for smooth looping -->
+      <div class="zone">
+        <img src="https://i.postimg.cc/mkxL4yXx/Untitled-design-1.png" alt="Online Classes">
+        <div class="zone-label">Online Classes</div>
+      </div>
+      <div class="zone">
+        <img src="https://i.postimg.cc/RZ1XLC5w/Untitled-design3.png" alt="Technical Hub">
+        <div class="zone-label">Technical Hub</div>
+      </div>
+      <div class="zone">
+        <img src="https://i.postimg.cc/T2y5XkPs/Untitled-design.png" alt="Music & Dance">
+        <div class="zone-label">Music & Dance</div>
+      </div>
+      <div class="zone">
+        <img src="https://i.postimg.cc/CMByH8vD/Untitled-design6.png" alt="Craft Corner">
+        <div class="zone-label">Craft Corner</div>
+      </div>
+      <div class="zone">
+        <img src="https://i.postimg.cc/3xwHPq84/Untitled-design2.png" alt="Sports Corner">
+        <div class="zone-label">Sports Corner</div>
+      </div>
+
+      <!-- Duplicate for loop effect -->
+      <div class="zone">
+        <img src="https://i.postimg.cc/mkxL4yXx/Untitled-design-1.png" alt="Online Classes">
+        <div class="zone-label">Online Classes</div>
+      </div>
+      <div class="zone">
+        <img src="https://i.postimg.cc/RZ1XLC5w/Untitled-design3.png" alt="Technical Hub">
+        <div class="zone-label">Technical Hub</div>
+      </div>
+      <div class="zone">
+        <img src="https://i.postimg.cc/T2y5XkPs/Untitled-design.png" alt="Music & Dance">
+        <div class="zone-label">Music & Dance</div>
+      </div>
+      <div class="zone">
+        <img src="https://i.postimg.cc/CMByH8vD/Untitled-design6.png" alt="Craft Corner">
+        <div class="zone-label">Craft Corner</div>
+      </div>
+      <div class="zone">
+        <img src="https://i.postimg.cc/3xwHPq84/Untitled-design2.png" alt="Sports Corner">
+        <div class="zone-label">Sports Corner</div>
+      </div>
+    </div>
+  </div>
+
+  <button class="join-button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfJyn1mlqKSKCcXhcdiOXxzFU0wOfUsMtzgre8-wC331Gzyvg/viewform?usp=sf_link'">Join Us →</button>
+
+</body>
+</html>
